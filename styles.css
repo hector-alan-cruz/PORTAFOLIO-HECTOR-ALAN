@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #0b1220;
+    color: #e2e8f0;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #1e293b;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* TITULOS */
+.titulo {
+    margin-left: 40px;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px 40px;
+}
+
+/* CARDS */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* TARJETAS VACÍAS */
+.placeholder {
+    opacity: 0.6;
+    border: 2px dashed #475569;
+}
+
+/* BOTÓN AGREGAR */
+.add {
+    border: 2px dashed #3b82f6;
+    text-align: center;
+    cursor: pointer;
+}
+
+.add:hover {
+    background: #3b82f6;
+    transition: 0.3s;
+}
