@@ -1,62 +1,93 @@
+:root {
+    --bg: #0a0a0a;
+    --card: #111827;
+    --accent: #2563eb;
+    --gold: #d4af37;
+    --text: #e5e7eb;
+}
+
+/* GENERAL */
 body {
-    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: #0b1220;
-    color: #e2e8f0;
 }
 
-header {
+/* NAV */
+.navbar {
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    color: var(--gold) !important;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 20px;
     text-align: center;
-    padding: 40px;
-    background: linear-gradient(90deg, #2563eb, #7c3aed);
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    background: #1e293b;
-    padding: 15px;
+.hero h1 {
+    font-size: 3rem;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+.hero span {
+    color: var(--gold);
 }
 
-/* TITULOS */
+/* TITULO */
 .titulo {
-    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
-/* GRID */
-.grid {
-    display: flex;
-    gap: 20px;
-    padding: 20px 40px;
+/* FILTROS */
+.filtros {
+    margin-bottom: 30px;
 }
 
-/* CARDS */
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-/* TARJETAS VACÍAS */
-.placeholder {
-    opacity: 0.6;
-    border: 2px dashed #475569;
-}
-
-/* BOTÓN AGREGAR */
-.add {
-    border: 2px dashed #3b82f6;
-    text-align: center;
+.filtros button {
+    background: var(--card);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
-.add:hover {
-    background: #3b82f6;
+.filtros .activo {
+    background: var(--accent);
+}
+
+/* TARJETAS */
+.card-pro {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
     transition: 0.3s;
+    border: 1px solid #1f2937;
+}
+
+.card-pro:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+/* BOTON */
+.btn-pro {
+    background: var(--accent);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px;
+    background: #020617;
 }
